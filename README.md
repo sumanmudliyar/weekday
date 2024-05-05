@@ -1,4 +1,4 @@
-go to temp branch
-dowmload the code 
-pnpm i 
-pnpm run dev
+1] go to temp branch
+2] download the code 
+3] pnpm i 
+4] pnpm run dev
