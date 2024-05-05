@@ -1,0 +1,12 @@
+.homepageMainContainer {
+  display: grid;
+  width: -webkit-fill-available;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,109 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  width: -webkit-fill-available;
+}
+
+.postedDate {
+  display: flex;
+  width: max-content;
+  border: 1px solid #a9a9a9;
+  border-radius: 13px;
+  padding: 3px;
+  font-size: 11px;
+}
+
+.companyDetailSalaryDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.companyDetailMainDiv {
+  display: flex;
+  gap: 4px;
+}
+
+.companyIconMainDiv {
+}
+
+.companyIconMainDiv img {
+  width: 30px;
+  height: 40px;
+}
+
+.companyDetialDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.companyName {
+  font-size: 13px;
+  color: #a9a9a9;
+}
+
+.roleName {
+  font-size: 13px;
+}
+
+.location {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.salaryRange {
+  font-size: 13px;
+  color: #818589;
+}
+
+.aboutCompanyMainDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.aboutCompanyHeader {
+  font-size: 13px;
+  font-weight: 600;
+}
+.aboutUs {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.aboutUsContent {
+  font-size: 11px;
+}
+
+.experienceDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.experienceHeader {
+  font-size: 13px;
+  color: #818589;
+}
+
+.experienceCount {
+  font-size: 11px;
+}
+
+.ButtonContainerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.easyApplyButton {
+  background-color: #7fffd4;
+}
+
+.raferralButton {
+  background-color: #324ab2;
+  color: white;
+}
