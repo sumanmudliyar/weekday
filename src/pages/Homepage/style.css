@@ -1,3 +1,9 @@
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .homepageMainContainer {
   display: grid;
   width: -webkit-fill-available;

@@ -9,7 +9,9 @@ const CompanyCard = ({ data }: props) => {
   return (
     <div className="mainContainer">
       <div className="postedDate">
-        <div></div>
+        <div>
+          <GiSandsOfTime className="sandglass" />
+        </div>
         <div>Posted 10 days ago</div>
       </div>
 
@@ -26,8 +28,7 @@ const CompanyCard = ({ data }: props) => {
         </div>
 
         <div className="salaryRange">
-          Estimated salary: {data.minJdSalary || 5}LPA -{" "}
-          {data.maxJdSalary || 100}
+          Estimated salary: {data.minJdSalary}LPA - {data.maxJdSalary}
           LPA
         </div>
       </div>
@@ -37,6 +38,7 @@ const CompanyCard = ({ data }: props) => {
         <div className="aboutUs">About us</div>
         <div className="aboutUsContent">{data.jobDetailsFromCompany}</div>
       </div>
+      <div className="viewButton">View job</div>
 
       <div className="experienceDiv">
         <div className="experienceHeader">Minimum Experience</div>
@@ -44,7 +46,10 @@ const CompanyCard = ({ data }: props) => {
       </div>
 
       <div className="ButtonContainerDiv">
-        <button className="easyApplyButton">Easy apply </button>
+        <button className="easyApplyButton">
+          <AiFillThunderbolt className="thunder" />
+          Easy apply
+        </button>
         <button className="raferralButton"> Unlock referral asks</button>
       </div>
     </div>

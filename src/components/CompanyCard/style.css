@@ -3,7 +3,23 @@
   flex-direction: column;
   gap: 8px;
   padding: 10px;
+
+  border: 2px solid #ccc; /* Gray border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   width: -webkit-fill-available;
+}
+
+.sandglass {
+  width: 15px;
+  height: 14px;
+  margin-top: 2px;
+}
+
+.filterContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .postedDate {
@@ -24,9 +40,6 @@
 .companyDetailMainDiv {
   display: flex;
   gap: 4px;
-}
-
-.companyIconMainDiv {
 }
 
 .companyIconMainDiv img {
@@ -76,6 +89,33 @@
 
 .aboutUsContent {
   font-size: 11px;
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+}
+
+.aboutUsContent::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    transparent,
+    white
+  ); /* Change the color as needed */
+  pointer-events: none;
+}
+
+.viewButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  color: #324ab2;
+  cursor: pointer;
+  z-index: 1;
 }
 
 .experienceDiv {
@@ -100,10 +140,23 @@
 }
 
 .easyApplyButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #7fffd4;
+}
+
+.thunder {
+  color: #ffdf00 !important;
 }
 
 .raferralButton {
   background-color: #324ab2;
   color: white;
+}
+
+.InputClass {
+  padding: 10px;
+  border-radius: 5px;
+  border-color: #ccc;
 }
