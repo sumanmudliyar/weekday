@@ -1,4 +1,4 @@
-# Steps to run the cod
+# Steps to run the code
 
 1. Clone the repo
    ```shell
