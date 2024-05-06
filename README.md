@@ -1,4 +1,18 @@
+# Steps to run the cod
 
-1] download the code
-2] pnpm i
-3] pnpm run dev
+1. Clone the repo
+   ```shell
+   git clone https://github.com/sumanmudliyar/weekday
+   ```
+2. Change Directory
+   ```shell
+   cd weekday
+   ```
+3. Install the dependencies
+   ```shell
+   pnpm i
+   ```
+4. Run
+   ```shell
+   pnpm run dev
+   ```
