@@ -1,6 +1,7 @@
 import "./style.css";
 import { GiSandsOfTime } from "react-icons/gi";
 import { AiFillThunderbolt } from "react-icons/ai";
+import kotak from "../../assets/kotak.png";
 
 interface props {
   data: any;
@@ -50,7 +51,11 @@ const CompanyCard = ({ data }: props) => {
           <AiFillThunderbolt className="thunder" />
           Easy apply
         </button>
-        <button className="raferralButton"> Unlock referral asks</button>
+        <button className="raferralButton">
+          <img src={kotak} className="referralImage" />
+          <img src={kotak} className="referralImage" />
+          Unlock referral asks
+        </button>
       </div>
     </div>
   );

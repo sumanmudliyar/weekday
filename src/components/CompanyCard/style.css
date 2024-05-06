@@ -153,10 +153,21 @@
 .raferralButton {
   background-color: #324ab2;
   color: white;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
 }
 
 .InputClass {
   padding: 10px;
   border-radius: 5px;
   border-color: #ccc;
+}
+
+.referralImage {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  filter: blur(2px);
 }

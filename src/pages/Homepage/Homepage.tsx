@@ -4,10 +4,10 @@ import CompanyCard from "../../components/CompanyCard/CompanyCard";
 import "./style.css";
 
 const Homepage = () => {
-  const [data, setData] = useState<any[]>([]); // Initialize data as an empty array
-  const [filteredData, setFilteredData] = useState<any[]>([]); // Initialize filtered data as an empty array
+  const [data, setData] = useState<any[]>([]);
+  const [filteredData, setFilteredData] = useState<any[]>([]);
 
-  const [loading, setLoading] = useState(false); // State to track loading status
+  const [loading, setLoading] = useState(false);
   const [offset, setOffset] = useState(0);
   const [limit, setlimit] = useState(10);
 
@@ -17,6 +17,8 @@ const Homepage = () => {
     jobRole: "",
     minSalary: "",
   });
+
+  // it is called whenever the search input field is filled with value
 
   useEffect(() => {
     const filtered = data.filter((item) => {
@@ -93,14 +95,13 @@ const Homepage = () => {
   };
 
   useEffect(() => {
-    // Add scroll event listener when component mounts
     window.addEventListener("scroll", handleScroll);
     return () => {
-      // Remove scroll event listener when component unmounts
       window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Run this effect only once when component mounts
 
+  // It clear's the filter search
   const handleReset = () => {
     setFilters({
       minExperience: "",
@@ -150,7 +151,6 @@ const Homepage = () => {
       <div className="homepageMainContainer">
         {filteredData?.map((item: any) => (
           <CompanyCard data={item} />
-          // Remember to return the JSX element
         ))}
       </div>
     </div>
